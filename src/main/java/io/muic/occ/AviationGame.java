@@ -3,5 +3,12 @@ package io.muic.occ;
 /**
  * Created by Don on 1/27/2017 AD.
  */
-public class AviationGame {
+public class AviationGame extends CommandParser {
+
+    public void start(){
+        if (options.hasOption("start")){
+
+        }
+
+    }
 }
