@@ -24,8 +24,11 @@ public class Study {
         return getContent("studyLevel1.txt");
     }
 
+    public static String getContentLevel2() throws Exception{
+        return getContent("studyLevel2.txt");
+    }
+
     public static void main(String[] args) throws Exception {
-        System.out.println(System.getProperty("user.home"));
-        System.out.println(getContentLevel1());
+        System.out.println(getContentLevel2());
     }
 }
