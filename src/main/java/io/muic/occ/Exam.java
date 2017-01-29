@@ -9,13 +9,13 @@ import java.util.Set;
 public class Exam {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        Set<String> questions = WeaponLevel1.getQuestions();
-        int index =0;
-        while (index < questions.size()) {
+        Set<String> questions = WeaponLevel2.getQuestions();
+        int index =1;
+        while (index <= questions.size()) {
             for(String i: questions){
-                System.out.println(i);
+                System.out.println(index+". "+i);
                 String inputLine = scanner.nextLine();
-                if(WeaponLevel1.checkAnswer(i,inputLine)){
+                if(WeaponLevel2.checkAnswer(i,inputLine)){
                     System.out.println("score +1");
                     index++;
                 } else{
