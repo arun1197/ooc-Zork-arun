@@ -3,21 +3,23 @@ package io.muic.occ;
 /**
  * Created by Don on 1/27/2017 AD.
  */
-public class License {
+public class License extends ReadFile {
 
-    public static void reportCard(){
-
+    public static int reportCard(){
+        Score score = new Score();
+        return score.getCount();
     }
 
-    public static void singleEngine(){
-
+    public static String singleEngine() throws Exception {
+        return getContent("singleEngine.txt");
     }
 
-    public static void twinEngine(){
-
+    public static String twinEngine() throws Exception{
+        return getContent("twinEngine.txt");
     }
 
-    public static void multiEngine(){
+    public static String multiEngine() throws Exception{
+        return getContent("multiEngine.txt");
 
     }
 }

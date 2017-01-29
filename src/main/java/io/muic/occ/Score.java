@@ -14,6 +14,10 @@ public class Score {
         count = 0;
     }
 
+    public Score(){
+
+    }
+
     /**
      * @return The short description of this type.
      */
