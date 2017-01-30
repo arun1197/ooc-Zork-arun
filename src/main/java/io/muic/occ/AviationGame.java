@@ -5,10 +5,16 @@ package io.muic.occ;
  */
 public class AviationGame extends CommandParser {
 
-    public void start(){
-        if (options.hasOption("start")){
+    public static void gameLevel1(){
 
-        }
+    }
+    public static void gameLevel2(){
+
+    }
+    public static void gameLevel3(){
+
+    }
+    public static void gameLevel4(){
 
     }
 }

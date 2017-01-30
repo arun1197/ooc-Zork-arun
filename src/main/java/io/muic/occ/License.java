@@ -5,9 +5,8 @@ package io.muic.occ;
  */
 public class License extends ReadFile {
 
-    public static int reportCard(){
-        Score score = new Score();
-        return score.getCount();
+    public static String reportCard(){
+        return "Your score is 9/10.";
     }
 
     public static String singleEngine() throws Exception {
@@ -21,9 +20,5 @@ public class License extends ReadFile {
     public static String multiEngine() throws Exception{
         return getContent("multiEngine.txt");
 
-    }
-
-    public static void main(String[] args) throws Exception {
-        System.out.println(multiEngine());
     }
 }

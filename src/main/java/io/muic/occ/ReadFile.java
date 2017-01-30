@@ -13,7 +13,7 @@ public class ReadFile {
     }
 
     private static File makeFile(String filename){
-        File file = new File(Expanduser.expanduser()+"/Desktop/MUIC/Object Oriented Design and Methodology ICCS330/Homework/Homework2-3/ooc-Zork-arun/src/main/java/io/muic/occ/"+filename);
+        File file = new File(Expanduser.expanduser()+"/Desktop/MUIC/Object Oriented Design and Methodology ICCS330/Homework/Homework2-3/ooc-Zork-arun/src/main/java/io/muic/occ/txt/"+filename);
         return file;
     }
 
