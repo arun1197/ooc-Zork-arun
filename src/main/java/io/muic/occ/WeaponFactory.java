@@ -7,9 +7,7 @@ import java.util.Set;
  */
 public class WeaponFactory {
 
-    public static Set<String> questionLevel1(){
-        return WeaponLevel1.getQuestions();
-    }
+    public static Set<String> questionLevel1() { return WeaponLevel1.getQuestions(); }
 
     public static Set<String> questionLevel2(){
         return WeaponLevel2.getQuestions();
