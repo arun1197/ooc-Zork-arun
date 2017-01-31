@@ -1,35 +1,15 @@
 package io.muic.occ;
 
 import java.util.HashMap;
-import java.util.Set;
 
 /**
  * Created by Don on 1/27/2017 AD.
  */
-public class WeaponLevel3 {
+public class WeaponLevel3 extends Weapon {
 
-    private static java.util.Map<String,String> questionsLevel3 = new HashMap<String,String>();
+    public static HashMap<String,String> questionsLevel3 = new HashMap<String,String>();
 
-    public static boolean checkAnswer(String key,String value){
-        setQuestions();
-        if (getValue(key).equals(value)){
-            return true;
-        }
-        else{
-            return false;
-        }
-    }
-
-    private static String getValue(String key){
-        return questionsLevel3.get(key);
-    }
-
-    public static Set<String> getQuestions(){
-        setQuestions();
-        return questionsLevel3.keySet();
-    }
-
-    private static void setQuestions() {
+    public static void setQuestions() {
         questionsLevel3.put("Which Annex to the Chicago Convention covers dangerous goods carried in aircraft?\n" +
                 "\tA.\tAnnex 16\n" +
                 "\tB.\tAnnex 17\n" +

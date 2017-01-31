@@ -4,26 +4,37 @@ import java.util.Scanner;
 
 /**
  * Hello world!
- *
  */
-public class App extends CommandParser{
+public class App{
 
-    public static void main(String[] args) throws Exception {
-        Scanner scanner = new Scanner(System.in);
-        System.out.println("Welcome");
-        String inputLine = scanner.nextLine();
-        if (inputLine.equals(1)) {
-            System.out.println("You're at the door");
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        String inputLine = input.nextLine();
+        boolean quit = false;
+        while(!quit){
+            if(inputLine.equals("n")){
+                Map.moveNorth();
+            }
+            else if(inputLine.equals("s")){
+                Map.moveSouth1();
+                break;
+            }
+            else if(inputLine.equals("e")){
+                try {
+                    Map.moveEast1();
+                    break;
+                } catch (Exception e) {
+                    e.printStackTrace();
+                }
+            }
+            else if(inputLine.equals("w")){
+                Map.moveWest1();
+            }
+            else if(inputLine.equals("quit")){
+                quit = false;
+            }
         }
-        if (inputLine.equals("s")) {
-            Exam.examLevel1();
-        }
-        if (inputLine.equals("e")) {
-            Study.getContentLevel1();
-        }
-        if (inputLine.equals("w")) {
-            License.reportCard();
-        }
+
     }
 }
 

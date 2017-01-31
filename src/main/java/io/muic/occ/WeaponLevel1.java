@@ -1,36 +1,15 @@
 package io.muic.occ;
 
 import java.util.HashMap;
-import java.util.Map;
-import java.util.Set;
 
 /**
  * Created by Don on 1/27/2017 AD.
  */
-public abstract class WeaponLevel1 {
+public abstract class WeaponLevel1 extends Weapon {
 
-    private static Map<String,String> questionsLevel1 = new HashMap<String,String>();
+    public static HashMap<String, String> questionsLevel1 = new HashMap<String,String>();
 
-    public static boolean checkAnswer(String key,String value){
-        setQuestions();
-        if (getValue(key).equals(value)){
-            return true;
-        }
-        else{
-            return false;
-        }
-    }
-
-    private static String getValue(String key){
-        return questionsLevel1.get(key);
-    }
-
-    public static Set<String> getQuestions(){
-        setQuestions();
-        return questionsLevel1.keySet();
-    }
-
-    private static void setQuestions() {
+    public static void setQuestions() {
         questionsLevel1.put("The United Nations was founded on\n" +
                 "\tA. March 24, 1945\n" +
                 "\tB. October 24, 1945\n" +

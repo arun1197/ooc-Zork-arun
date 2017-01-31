@@ -1,36 +1,15 @@
 package io.muic.occ;
 
 import java.util.HashMap;
-import java.util.Map;
-import java.util.Set;
 
 /**
  * Created by Don on 1/27/2017 AD.
  */
-public class WeaponLevel2{
+public class WeaponLevel2 extends Weapon{
 
-    private static Map<String,String> questionsLevel2 = new HashMap<String,String>();
+    public static HashMap<String,String> questionsLevel2 = new HashMap<String,String>();
 
-    public static boolean checkAnswer(String key,String value){
-        setQuestions();
-        if (getValue(key).equals(value)){
-            return true;
-        }
-        else{
-            return false;
-        }
-    }
-
-    private static String getValue(String key){
-        return questionsLevel2.get(key);
-    }
-
-    public static Set<String> getQuestions(){
-        setQuestions();
-        return questionsLevel2.keySet();
-    }
-
-    private static void setQuestions() {
+    public static void setQuestions() {
         questionsLevel2.put("Radiocarbon is produced in the atmosphere as a result of\n" +
                 "\tA.\tcollision between fast neutrons and nitrogen nuclei present in the atmosphere\n" +
                 "\tB.\taction of ultraviolet light from the sun on atmospheric oxygen\n" +

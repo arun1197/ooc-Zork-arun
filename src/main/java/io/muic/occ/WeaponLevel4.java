@@ -5,30 +5,11 @@ import java.util.*;
 /**
  * Created by Don on 1/27/2017 AD.
  */
-public class WeaponLevel4{
+public class WeaponLevel4 extends Weapon{
 
-    private static java.util.Map<String,String> questionsLevel4 = new HashMap<String,String>();
+    public static HashMap<String,String> questionsLevel4 = new HashMap<String,String>();
 
-    public static boolean checkAnswer(String key,String value){
-        setQuestions();
-        if (getValue(key).equals(value)){
-            return true;
-        }
-        else{
-            return false;
-        }
-    }
-
-    private static String getValue(String key){
-        return questionsLevel4.get(key);
-    }
-
-    public static Set<String> getQuestions(){
-        setQuestions();
-        return questionsLevel4.keySet();
-    }
-
-    private static void setQuestions() {
+    public static void setQuestions() {
         questionsLevel4.put("What does FAA stand for?\n" +
                 "\tA. Federal Avionics Administration\n" +
                 "\tB. Federal Aviation Administration\n" +

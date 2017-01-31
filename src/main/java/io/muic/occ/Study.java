@@ -19,4 +19,5 @@ public class Study extends ReadFile {
     public static String getContentLevel4() throws Exception{
         return getContent("studyLevel4.txt");
     }
+
 }
