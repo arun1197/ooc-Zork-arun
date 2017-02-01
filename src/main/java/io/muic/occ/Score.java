@@ -7,7 +7,7 @@ public class Score {
     // A name for this type of simulation participant
     private String name;
     // How many of this type exist in the simulation.
-    private int count;
+    private static int count;
 
     public Score(String name) {
         this.name = name;
@@ -28,14 +28,14 @@ public class Score {
     /**
      * @return The current count for this type.
      */
-    public int getCount() {
+    public static int getCount() {
         return count;
     }
 
     /**
      * Increment the current count by one.
      */
-    public void increment() {
+    public static void increment() {
         count++;
     }
 

@@ -7,22 +7,24 @@ import java.util.Set;
 /**
  * Created by Don on 1/31/2017 AD.
  */
-public class ExamMaker {
+public class ExamMaker extends Score {
     public static void examMaker(Set<String> questions, HashMap<String, String> questionMap) {
+        int score = 0;
         Scanner scanner = new Scanner(System.in);
-        int index = 1;
-        while (index <= questions.size()) {
+        int questionNumber = 1;
+        while (questionNumber <= questions.size()) {
             for (String i : questions) {
-                System.out.println(index + ". " + i);
+                System.out.println(questionNumber + ". " + i);
                 String inputLine = scanner.nextLine();
                 if (Weapon.checkAnswer(questionMap, i, inputLine)) {
-                    System.out.println("score +1");
-                    index++;
+                    questionNumber++;
+                    score++;
+                    increment();
                 } else {
-                    System.out.println("wrong answer");
-                    index++;
+                    questionNumber++;
                 }
             }
         }
+        System.out.println("Your score is " + score + "/10");
     }
 }

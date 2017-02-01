@@ -17,7 +17,5 @@ public class Monster extends Exam {
         examLevel3();
     }
 
-    public static void attackLevel4(){
-        examLevel4();
-    }
+    public static void attackLevel4() { examLevel4(); }
 }
