@@ -41,10 +41,6 @@ public class Map {
         System.out.println(Study.getContentLevel4());
     }
 
-    public static void moveWest1() {
-        License.reportCard();
-    }
-
     public static void moveWest2() throws Exception {
         License.singleEngine();
     }

@@ -20,7 +20,20 @@ public class ExamMaker extends Score {
                     questionNumber++;
                     score++;
                     increment();
-                } else {
+                }
+                if(score>=8 && !Item.items.contains("report card")){
+                    Item.items.add("report card");
+                }
+                if(Score.getCount()>=17 && score>=9 && !Item.items.contains("single engine")){
+                    Item.items.add("single engine");
+                }
+                if(Score.getCount()>=26 && score>=9 && !Item.items.contains("twin engine")){
+                    Item.items.add("twin engine");
+                }
+                if(Score.getCount()>=36 && score==10 && !Item.items.contains("multi engine")){
+                    Item.items.add("multi engine");
+                }
+                else {
                     questionNumber++;
                 }
             }

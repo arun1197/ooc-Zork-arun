@@ -5,10 +5,6 @@ package io.muic.occ;
  */
 public class License extends ReadFile {
 
-    public static String reportCard(){
-        return "Your score is 9/10.";
-    }
-
     public static String singleEngine() throws Exception {
         return getContent("singleEngine.txt");
     }

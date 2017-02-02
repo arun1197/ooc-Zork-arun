@@ -29,23 +29,26 @@ public class App extends Score {
                 Map.moveNorth();
                 quit = false;
             }
+            if(inputLine.equals("show")){
+                System.out.println("Your items: "+Item.items);
+            }
             if(inputLine.equals("s")){
-                if(Score.getCount()<=0){
+                if(Score.getCount()<=0 && Item.items.size()==0){
                     Map.moveSouth1();
                 }
-                if(getCount()>=8){
+                if(getCount()>=8 && Item.items.size()==1){
                     Map.moveSouth2();
                 }
             }
             if(inputLine.equals("e")){
-                if(getCount()<=0){
+                if(getCount()<=0 && Item.items.size()==0){
                     try {
                         Map.moveEast1();
                     } catch (Exception e) {
                         e.printStackTrace();
                     }
                 }
-                if(getCount()>=8){
+                if(getCount()>=8 && Item.items.size()==1){
                     try {
                         Map.moveEast2();
                     } catch (Exception e) {
@@ -54,10 +57,10 @@ public class App extends Score {
                 }
             }
             if(inputLine.equals("w")){
-                if(getCount()<=0){
-                    Map.moveWest1();
+                if(getCount()<=0 && Item.items.size()==0){
+                    System.out.println("Your score: "+getCount()+"/10");
                 }
-                if(getCount()>=8){
+                if(getCount()>=8 && Item.items.size()==1){
                     try {
                         Map.moveWest2();
                     } catch (Exception e) {
