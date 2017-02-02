@@ -21,6 +21,9 @@ public class ExamMaker extends Score {
                     score++;
                     increment();
                 }
+                if(!Weapon.checkAnswer(questionMap, i, inputLine)){
+                    questionNumber++;
+                }
                 if(score>=8 && !Item.items.contains("report card")){
                     Item.items.add("report card");
                 }
@@ -32,9 +35,6 @@ public class ExamMaker extends Score {
                 }
                 if(Score.getCount()>=36 && score==10 && !Item.items.contains("multi engine")){
                     Item.items.add("multi engine");
-                }
-                else {
-                    questionNumber++;
                 }
             }
         }
