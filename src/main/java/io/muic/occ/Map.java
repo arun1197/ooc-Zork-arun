@@ -40,6 +40,9 @@ public class Map {
     public static void moveEast4() throws Exception {
         System.out.println(Study.getContentLevel4());
     }
+//    public static void moveWest1(){
+//        Item.items.add("report card");
+//    }
 
     public static void moveWest2() throws Exception {
         License.singleEngine();
