@@ -10,7 +10,6 @@ import java.util.Set;
 public class ExamMaker extends Score {
     public static int score;
     public static void examMaker(Set<String> questions, HashMap<String, String> questionMap) {
-        //int score = 0;
         Scanner scanner = new Scanner(System.in);
         int questionNumber = 1;
         while (questionNumber <= questions.size()) {
