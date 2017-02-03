@@ -7,4 +7,4 @@
 - Once the jar file is running, the commands to execute the game will be printed.
 - Follow the commands and enjoy the game.
 
-- If you an exception comes up from ReadFile class, change the directory to the folder and it should work fine.
+- If an exception comes up from ReadFile class, change the directory to the folder and it should work fine.
