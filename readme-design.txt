@@ -1,0 +1,12 @@
+- WeaponLevel1-2-3-4 is for adding in questions which monster will use to attack the player.
+- For these 4 classes I extend Weapon so that I can reuse 3 methods from Weapon class, to check the answer or get the questions.
+
+- WeaponFactory extracts questions for each level
+- Study extracts contents from text files for each level
+- Score is for keeping track total score of every level
+- Monster class is for generating questions of each level that will be used to attack the player.
+- License class is for generating the license content
+- Map class handles the moves in the game
+- CommandParser checks the command typed in by the player
+- AviationGame starts the parser method from CommandParser
+- Item class displays the player's item and also adds in the reward when the requirements is met.
