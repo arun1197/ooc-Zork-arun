@@ -20,4 +20,7 @@ public class Study extends ReadFile {
         return getContent("studyLevel4.txt");
     }
 
+    public static void main(String[] args) throws Exception {
+        System.out.println(getContentLevel4());
+    }
 }

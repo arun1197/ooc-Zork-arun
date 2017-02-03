@@ -25,20 +25,24 @@ public class Map {
         Monster.attackLevel4();
     }
 
-    public static void moveEast1() throws Exception {
+    public static String moveEast1() throws Exception {
         System.out.println(Study.getContentLevel1());
+        return null;
     }
 
-    public static void moveEast2() throws Exception {
+    public static String moveEast2() throws Exception {
         System.out.println(Study.getContentLevel2());
+        return null;
     }
 
-    public static void moveEast3() throws Exception {
+    public static String moveEast3() throws Exception {
         System.out.println(Study.getContentLevel3());
+        return null;
     }
 
-    public static void moveEast4() throws Exception {
+    public static String moveEast4() throws Exception {
         System.out.println(Study.getContentLevel4());
+        return null;
     }
 //    public static void moveWest1(){
 //        Item.items.add("report card");

@@ -23,5 +23,10 @@ public class Weapon {
         return questions.keySet();
     }
 
+    public static void main(String[] args) {
+        WeaponLevel1.setQuestions();
+        System.out.println(getQuestions(WeaponLevel1.questionsLevel1));
+    }
+
 
 }

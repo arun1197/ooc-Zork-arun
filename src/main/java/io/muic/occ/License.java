@@ -17,4 +17,8 @@ public class License extends ReadFile {
         return getContent("multiEngine.txt");
 
     }
+
+    public static void main(String[] args) throws Exception{
+        System.out.println(multiEngine());
+    }
 }
